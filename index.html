@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="美桦君昱 — 集安冰葡萄酒庄园，北纬41°冰酒黄金产区，酿造冰葡萄酒、起泡酒、干红、白兰地XO。天地之美，风土之桦。">
+<title>美桦君昱 | 集安精品冰葡萄酒庄园</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Page Transition -->
+<div class="page-transition" aria-hidden="true"></div>
+
+<!-- Ink Blur Filter -->
+<svg style="position:absolute;width:0;height:0;" aria-hidden="true">
+  <defs>
+    <filter id="ink-blur"><feGaussianBlur stdDeviation="1.8"/></filter>
+    <filter id="ink-blur-light"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+</svg>
+
+<!-- Ink River — 鸭绿江墨流 -->
+<div class="ink-river" aria-hidden="true">
+  <svg viewBox="0 0 200 1400" preserveAspectRatio="none">
+    <!-- Wide wash -->
+    <path class="river-wash-wide" d="M95,-20 C50,100 160,220 70,350 C15,460 145,580 80,700 C35,800 150,920 75,1050 C25,1140 140,1260 90,1380 C60,1430 120,1480 95,1520"/>
+    <!-- Medium wash -->
+    <path class="river-wash" d="M93,-20 C60,120 150,240 78,370 C20,480 140,590 85,710 C40,810 148,930 80,1060 C30,1150 138,1270 88,1390 C58,1440 118,1490 93,1520"/>
+    <!-- Main river -->
+    <path class="river-main" d="M92,-20 C65,130 145,250 80,380 C22,490 135,600 88,715 C42,825 145,940 82,1070 C32,1160 135,1280 88,1400 C60,1450 115,1500 92,1520"/>
+    <!-- Branch streams -->
+    <path class="river-branch" d="M78,280 C52,320 22,350 28,420 C32,460 18,490 8,540"/>
+    <path class="river-branch" d="M86,580 C112,620 148,640 142,700 C139,730 150,760 156,810"/>
+    <path class="river-branch" d="M80,900 C55,940 30,970 38,1030 C42,1060 30,1090 20,1130"/>
+    <!-- Ink drops -->
+    <circle class="river-drop" cx="82" cy="150" r="5.5"/>
+    <circle class="river-drop" cx="88" cy="300" r="4"/>
+    <circle class="river-drop" cx="76" cy="450" r="3.5"/>
+    <circle class="river-drop" cx="90" cy="620" r="6"/>
+    <circle class="river-drop" cx="80" cy="780" r="4.5"/>
+    <circle class="river-drop" cx="86" cy="950" r="5"/>
+    <circle class="river-drop" cx="84" cy="1100" r="4"/>
+    <circle class="river-drop" cx="88" cy="1280" r="5.5"/>
+    <!-- Extended branches (deeper page) -->
+    <path class="river-branch river-branch-deep" d="M82,1280 C60,1320 40,1350 48,1400 C52,1430 38,1460 28,1500"/>
+    <path class="river-branch river-branch-deep" d="M90,1320 C110,1350 140,1380 135,1430 C132,1460 145,1490 152,1520"/>
+    <!-- Ink mist / fog dots -->
+    <circle class="river-drop river-mist" cx="78" cy="1340" r="7"/>
+    <circle class="river-drop river-mist" cx="92" cy="1380" r="8"/>
+    <circle class="river-drop river-mist" cx="84" cy="1430" r="6"/>
+  </svg>
+</div>
+
+<!-- Ink River LEFT — 鸭绿江左岸 -->
+<div class="ink-river ink-river-left" aria-hidden="true">
+  <svg viewBox="0 0 200 1400" preserveAspectRatio="none">
+    <path class="river-wash-wide" d="M105,-20 C150,100 40,220 130,350 C185,460 55,580 120,700 C165,800 50,920 125,1050 C175,1140 60,1260 110,1380 C140,1430 80,1480 105,1520"/>
+    <path class="river-wash" d="M107,-20 C140,120 50,240 122,370 C180,480 60,590 115,710 C160,810 52,930 120,1060 C170,1150 62,1270 112,1390 C142,1440 82,1490 107,1520"/>
+    <path class="river-main" d="M108,-20 C135,130 55,250 120,380 C178,490 65,600 112,715 C158,825 55,940 118,1070 C168,1160 65,1280 112,1400 C140,1450 85,1500 108,1520"/>
+    <path class="river-branch" d="M122,280 C148,320 178,350 172,420 C168,460 182,490 192,540"/>
+    <path class="river-branch" d="M114,580 C88,620 52,640 58,700 C61,730 50,760 44,810"/>
+    <path class="river-branch" d="M120,900 C145,940 170,970 162,1030 C158,1060 170,1090 180,1130"/>
+    <path class="river-branch river-branch-deep" d="M118,1280 C140,1320 160,1350 152,1400 C148,1430 162,1460 172,1500"/>
+    <path class="river-branch river-branch-deep" d="M110,1320 C88,1350 60,1380 65,1430 C68,1460 52,1490 48,1520"/>
+    <circle class="river-drop" cx="118" cy="150" r="4.5"/>
+    <circle class="river-drop" cx="112" cy="300" r="5"/>
+    <circle class="river-drop" cx="124" cy="450" r="3"/>
+    <circle class="river-drop" cx="110" cy="620" r="5.5"/>
+    <circle class="river-drop" cx="120" cy="780" r="4"/>
+    <circle class="river-drop" cx="114" cy="950" r="5"/>
+    <circle class="river-drop" cx="116" cy="1100" r="3.5"/>
+    <circle class="river-drop" cx="112" cy="1280" r="6"/>
+    <circle class="river-drop river-mist" cx="122" cy="1340" r="7"/>
+    <circle class="river-drop river-mist" cx="108" cy="1380" r="8"/>
+    <circle class="river-drop river-mist" cx="116" cy="1430" r="6"/>
+  </svg>
+</div>
+
+<!-- Ink Connectors — horizontal wash between rivers -->
+<div class="ink-connectors" aria-hidden="true">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+    <line class="ink-connector-line" id="conn-1" x1="8" y1="18" x2="92" y2="18"/>
+    <line class="ink-connector-line" id="conn-2" x1="8" y1="36" x2="92" y2="36"/>
+    <line class="ink-connector-line" id="conn-3" x1="8" y1="54" x2="92" y2="54"/>
+    <line class="ink-connector-line" id="conn-4" x1="8" y1="72" x2="92" y2="72"/>
+    <line class="ink-connector-line" id="conn-5" x1="8" y1="90" x2="92" y2="90"/>
+  </svg>
+</div>
+
+<!-- Ink Splashes — section boundary effects -->
+<div class="ink-splash" id="splash-1" style="width:180px;height:180px;top:45%;left:15%;"></div>
+<div class="ink-splash" id="splash-2" style="width:120px;height:120px;top:55%;right:20%;"></div>
+<div class="ink-splash" id="splash-3" style="width:200px;height:200px;top:70%;left:60%;"></div>
+<div class="ink-splash" id="splash-4" style="width:140px;height:140px;top:85%;left:25%;"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav" role="navigation" aria-label="主导航">
+  <div class="nav-brand">
+    <a href="index.html">
+      <img src="img/logo-web.png" alt="美桦君昱" class="nav-logo-img">
+    </a>
+    <span class="nav-brand-text latin" style="font-family:'Cinzel',serif;font-size:0.9rem;color:var(--ink-50);letter-spacing:0.15em;">MEI HUA JUN YU</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">首页</a></li>
+    <li><a href="about/index.html">品牌故事</a></li>
+    <li><a href="products/index.html">产品系列</a></li>
+    <li><a href="tourism/index.html">庄园之旅</a></li>
+    <li><a href="news/index.html">新闻动态</a></li>
+    <li><a href="contact/index.html">联系我们</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav" aria-hidden="true">
+  <button class="mobile-nav-close" aria-label="关闭菜单">&times;</button>
+  <a href="index.html">首页</a>
+  <a href="about/index.html">品牌故事</a>
+  <a href="products/index.html">产品系列</a>
+  <a href="tourism/index.html">庄园之旅</a>
+  <a href="news/index.html">新闻动态</a>
+  <a href="contact/index.html">联系我们</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" style="background:linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)),url('img/photos/photo-1506377247377-2a5b3b417ebb.jpg') center/cover no-repeat;">
+  <!-- Ink Drop Background -->
+  <div class="hero-ink-drops" aria-hidden="true">
+    <div class="ink-drop"></div>
+    <div class="ink-drop"></div>
+    <div class="ink-drop"></div>
+    <div class="ink-drop"></div>
+  </div>
+
+  <!-- Mountain Silhouettes -->
+  <div class="hero-mountains" aria-hidden="true">
+    <!-- Front layer -->
+    <div class="mountain-layer" style="bottom:0;opacity:0.12;z-index:3;">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,280 L80,240 L200,260 L350,160 L480,200 L600,120 L750,180 L880,100 L1000,150 L1150,80 L1300,140 L1440,90 L1440,320 L0,320Z" fill="#1A1A1A"/>
+      </svg>
+    </div>
+    <!-- Mid layer -->
+    <div class="mountain-layer" style="bottom:0;opacity:0.06;z-index:2;">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,300 L100,250 L250,280 L400,200 L550,260 L700,170 L850,240 L1000,160 L1150,220 L1300,180 L1440,210 L1440,320 L0,320Z" fill="#1A1A1A"/>
+      </svg>
+    </div>
+    <!-- Far layer -->
+    <div class="mountain-layer" style="bottom:0;opacity:0.03;z-index:1;">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,280 L180,220 L350,260 L500,180 L650,240 L800,150 L950,230 L1100,170 L1250,210 L1440,160 L1440,320 L0,320Z" fill="#1A1A1A"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <!-- Logo as central element -->
+    <div style="margin-bottom:var(--space-6);">
+      <img src="img/logo-web.png" alt="美桦君昱"
+           style="height:200px;width:auto;margin:0 auto;filter:brightness(0);">
+    </div>
+
+    <h1 class="hero-title display" style="font-size:clamp(2.5rem,6vw,4.5rem);">
+      美桦君昱
+    </h1>
+
+    <div class="hero-brush-line"></div>
+
+    <p class="hero-subtitle">
+      北纬 41° 的世界冰酒之都<br>
+      长白山麓与鸭绿江畔的交汇<br>
+      以虔诚之心酿造东方顶级冰酒与葡萄酒
+    </p>
+
+    <div class="hero-actions">
+      <a href="products/index.html" class="btn btn-ink btn-lg">探索产品系列</a>
+      <a href="about/index.html" class="btn btn-outline btn-lg">了解品牌故事</a>
+    </div>
+  </div>
+
+  <!-- Scroll Hint -->
+  <div class="scroll-hint">
+    <span>探索庄园</span>
+    <div class="scroll-hint-line"></div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="section ink-wash-section" id="philosophy" style="background:linear-gradient(rgba(255,255,255,0.82),rgba(255,255,255,0.82)),url('img/photos/photo-1585409677983-0f6c41ca9c3b.jpg') center/cover no-repeat;">
+  <div class="container container-narrow">
+    <div style="text-align:center;margin-bottom:var(--space-16);" class="reveal">
+      <div class="seal" style="margin:0 auto var(--space-6);">君</div>
+      <span class="section-label" style="display:block;margin-top:var(--space-4);">Our Philosophy</span>
+    </div>
+
+    <h2 class="heading-xl text-center reveal" style="margin-bottom:var(--space-8);">
+      天地之美<br>风土之桦
+    </h2>
+    <div class="brush-divider reveal reveal-delay-1"></div>
+    <p class="text-center reveal reveal-delay-2" style="color:var(--ink-50);font-size:var(--text-lg);line-height:2;max-width:600px;margin:0 auto;">
+      美桦君昱坚信，一瓶伟大的冰酒诞生于天地之间的完美交汇。
+      长白山的庇护、鸭绿江的润泽、北纬 41° 的阳光与零下 10°C 的严寒 —
+      我们只是虔诚的守护者，将这自然的馈赠以最纯粹的方式呈现于世人。
+    </p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section section-sm">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="card reveal" style="padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1506377247377-2a5b3b417ebb.jpg" alt="北纬41°葡萄园" loading="lazy"></div>
+        <div class="card-body" style="text-align:center;">
+          <h4>北纬 41° 黄金纬度</h4>
+          <p class="card-desc">与世界冰酒之都加拿大尼亚加拉同一纬度，冬季严寒成就冰酒酿造的最佳条件。</p>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-1" style="padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1585409677983-0f6c41ca9c3b.jpg" alt="长白山纯净水源" loading="lazy"></div>
+        <div class="card-body" style="text-align:center;">
+          <h4>长白山纯净水源</h4>
+          <p class="card-desc">长白山天然矿泉水灌溉，火山土壤赋予葡萄独特的矿物感与纯净风味。</p>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-2" style="padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1506377247377-2a5b3b417ebb.jpg" alt="古法酿造工艺" loading="lazy"></div>
+        <div class="card-body" style="text-align:center;">
+          <h4>古法酿造工艺</h4>
+          <p class="card-desc">-8°C 以下自然冰冻采摘，坚守传统冰酒酿造技艺，每一滴都是自然的馈赠。</p>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-3" style="padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1464639351491-a172c2aa2911.jpg" alt="有机生态种植" loading="lazy"></div>
+        <div class="card-body" style="text-align:center;">
+          <h4>有机生态种植</h4>
+          <p class="card-desc">千亩基地获国家有机认证，以自然农法守护土地纯净，从源头保证品质。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY TEASER ============ -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;">
+      <div class="reveal-left" style="position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;background:var(--paper-dark);border:1px solid var(--ink-15);">
+        <img src="img/photos/photo-1506377247377-2a5b3b417ebb.jpg"
+             alt="美桦君昱葡萄园" loading="lazy"
+             style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">Our Story</span>
+        <div style="font-family:'Cinzel',serif;font-size:5rem;color:var(--ink);opacity:0.06;line-height:1;">2010</div>
+        <h3 class="heading-lg" style="margin-bottom:var(--space-4);">始于集安<br>志在东方顶级冰酒</h3>
+        <p style="color:var(--ink-50);line-height:2;margin-bottom:1rem;">
+          美桦君昱始于 2010 年，坐落于吉林省集安市 — 中国冰葡萄酒的核心产区。
+          千亩葡萄种植基地，涵盖冰葡萄威代尔、北冰红等优质品种，
+          以及赤霞珠、品丽珠等经典酿酒葡萄。
+        </p>
+        <p style="color:var(--ink-50);line-height:2;margin-bottom:1.5rem;">
+          集安地处长白山南麓，鸭绿江穿城而过，独特的半大陆半海洋性气候
+          与火山灰土壤，造就了中国唯一能够稳定生产冰葡萄酒的产区。
+        </p>
+        <a href="about/index.html" class="btn btn-outline">深入了解品牌故事</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section section-ink-heavy" id="collection">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label reveal" style="color:var(--gold-light);">Our Collection</span>
+      <h2 class="heading-xl reveal" style="color:var(--paper);">产品系列</h2>
+      <p class="reveal reveal-delay-1" style="color:var(--text-on-dark-muted);">
+        从稀贵的冰酒到优雅的起泡酒，从醇厚的干红到珍藏级白兰地XO — 每一款都是集安风土的极致表达。
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="wine-card reveal" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1553361371-9b22f78e8b1d.jpg" alt="冰葡萄酒" loading="lazy"></div>
+        <div class="card-body">
+        <div class="wine-card-year">Icewine</div>
+        <h4 class="wine-card-name" style="color:var(--paper);">冰葡萄酒</h4>
+        <div class="wine-card-line" style="background:var(--gold);"></div>
+        <p class="wine-card-desc" style="color:var(--text-on-dark-muted);">
+          -8°C 以下自然冰冻采摘，金黄琥珀色泽，蜜糖与热带水果的馥郁芬芳，甘甜与酸度的完美平衡。
+        </p>
+        <div class="wine-card-meta" style="color:var(--text-on-dark-muted);">
+          <div>规格<strong style="color:var(--gold-light);">375ml</strong></div>
+          <div>品种<strong style="color:var(--gold-light);">威代尔</strong></div>
+        </div>
+        <a href="products/index.html" style="display:inline-block;margin-top:1.5rem;color:var(--gold-light);font-size:0.85rem;letter-spacing:0.06em;">了解详情 →</a>
+        </div>
+      </div>
+
+      <div class="wine-card reveal reveal-delay-1" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1510812431401-41d2bd2722f3.jpg" alt="起泡酒" loading="lazy"></div>
+        <div class="card-body">
+        <div class="wine-card-year">Sparkling</div>
+        <h4 class="wine-card-name" style="color:var(--paper);">起泡酒</h4>
+        <div class="wine-card-line" style="background:var(--gold);"></div>
+        <p class="wine-card-desc" style="color:var(--text-on-dark-muted);">
+          传统瓶内二次发酵，细腻气泡升腾，柑橘与白花香气，活泼的酸度带来愉悦的开场与悠长的回味。
+        </p>
+        <div class="wine-card-meta" style="color:var(--text-on-dark-muted);">
+          <div>规格<strong style="color:var(--gold-light);">750ml</strong></div>
+          <div>品种<strong style="color:var(--gold-light);">霞多丽</strong></div>
+        </div>
+        <a href="products/index.html" style="display:inline-block;margin-top:1.5rem;color:var(--gold-light);font-size:0.85rem;letter-spacing:0.06em;">了解详情 →</a>
+        </div>
+      </div>
+
+      <div class="wine-card reveal reveal-delay-2" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1558001373-7b93ee48ffa0.jpg" alt="干红葡萄酒" loading="lazy"></div>
+        <div class="card-body">
+        <div class="wine-card-year">Dry Red</div>
+        <h4 class="wine-card-name" style="color:var(--paper);">干红葡萄酒</h4>
+        <div class="wine-card-line" style="background:var(--gold);"></div>
+        <p class="wine-card-desc" style="color:var(--text-on-dark-muted);">
+          精选赤霞珠与品丽珠，法国橡木桶陈酿 12 个月。黑醋栗与雪松的复杂香气，单宁柔滑如丝绒。
+        </p>
+        <div class="wine-card-meta" style="color:var(--text-on-dark-muted);">
+          <div>规格<strong style="color:var(--gold-light);">750ml</strong></div>
+          <div>品种<strong style="color:var(--gold-light);">赤霞珠</strong></div>
+        </div>
+        <a href="products/index.html" style="display:inline-block;margin-top:1.5rem;color:var(--gold-light);font-size:0.85rem;letter-spacing:0.06em;">了解详情 →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brandy XO -->
+    <div style="margin-top:2.5rem;max-width:500px;margin-left:auto;margin-right:auto;">
+      <div class="wine-card reveal reveal-delay-3" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:0;">
+        <div class="card-image"><img src="img/photos/photo-1569529465841-dfecdab7503b.jpg" alt="白兰地 XO" loading="lazy"></div>
+        <div class="card-body" style="text-align:center;">
+        <div class="wine-card-year">Brandy XO</div>
+        <h4 class="wine-card-name" style="color:var(--paper);">白兰地 XO</h4>
+        <div class="wine-card-line" style="background:var(--gold);margin-left:auto;margin-right:auto;"></div>
+        <p class="wine-card-desc" style="color:var(--text-on-dark-muted);">
+          法国利穆赞橡木桶陈酿 10 年以上，琥珀色酒液散发香草、干果与橡木的醇厚芬芳，口感圆润绵长。
+        </p>
+        <div class="wine-card-meta" style="color:var(--text-on-dark-muted);justify-content:center;">
+          <div>规格<strong style="color:var(--gold-light);">700ml</strong></div>
+          <div>陈酿<strong style="color:var(--gold-light);">10 年+</strong></div>
+        </div>
+        <a href="products/index.html" style="display:inline-block;margin-top:1.5rem;color:var(--gold-light);font-size:0.85rem;letter-spacing:0.06em;">了解详情 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TERROIR ============ -->
+<section class="parallax-section" id="terroir">
+  <div class="parallax-bg parallax-layer" data-speed="-0.02">
+    <img src="img/photos/photo-1585409677983-0f6c41ca9c3b.jpg"
+         alt="集安葡萄园风光" loading="lazy">
+  </div>
+  <div class="parallax-overlay"></div>
+
+  <div class="parallax-content">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:4rem;">
+        <span class="section-label reveal" style="color:var(--gold-light);">Terroir</span>
+        <h2 class="heading-xl reveal" style="color:var(--paper);">风土 · 集安之魂</h2>
+        <p class="reveal reveal-delay-1" style="color:var(--text-on-dark-muted);">
+          北纬 41°，东经 126° — 长白山南麓与鸭绿江的交汇之处，中国冰酒的圣地。
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="stat-card reveal" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number" data-count="1000" style="color:var(--gold);">1000<span>亩+</span></div>
+          <div class="stat-label" style="color:var(--text-on-dark-muted);">葡萄种植基地</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number" data-count="15" style="color:var(--gold);">15<span>年</span></div>
+          <div class="stat-label" style="color:var(--text-on-dark-muted);">葡萄藤平均藤龄</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number" data-count="3" style="color:var(--gold);">3<span>类</span></div>
+          <div class="stat-label" style="color:var(--text-on-dark-muted);">土壤 · 火山灰 · 砂质壤土 · 黏土</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label reveal">The Experience</span>
+      <h2 class="heading-xl reveal">品鉴之旅</h2>
+      <p class="reveal reveal-delay-1">沉浸式体验从葡萄园到酒杯的完整旅程，感受集安风土在舌尖流淌的魔力。</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-text">
+          <h4>庄园漫步</h4>
+          <div class="time">约 1 小时</div>
+          <p>跟随酿酒师穿越千亩葡萄园，了解北纬 41° 冰酒产区的独特风土与有机种植哲学，感受长白山麓的纯净气息。</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <img class="timeline-image" src="img/photos/photo-1464639351491-a172c2aa2911.jpg" alt="庄园漫步" loading="lazy">
+      </div>
+      <div class="timeline-item reveal">
+        <img class="timeline-image" src="img/photos/photo-1510812431401-41d2bd2722f3.jpg" alt="酒窖探秘" loading="lazy">
+        <div class="timeline-dot"></div>
+        <div class="timeline-text">
+          <h4>酒窖探秘</h4>
+          <div class="time">约 45 分钟</div>
+          <p>进入恒温恒湿的地下酒窖，橡木桶陈酿的醇香弥漫。从发酵到装瓶，见证时光在橡木桶中施展的魔法。</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-text">
+          <h4>私人品鉴</h4>
+          <div class="time">约 1.5 小时</div>
+          <p>在庄园品鉴室中，由资深侍酒师引导，品鉴 5 款精选佳酿。搭配当地特色奶酪与坚果，让味蕾在酒香中沉醉。</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <img class="timeline-image" src="img/photos/photo-1553361371-9b22f78e8b1d.jpg" alt="私人品鉴" loading="lazy">
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-12);" class="reveal">
+      <a href="tourism/index.html" class="btn btn-ink btn-lg">探索庄园体验</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section-ink-heavy" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label reveal" style="color:var(--gold-light);">Gallery</span>
+      <h2 class="heading-xl reveal" style="color:var(--paper);">庄园掠影</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="img/photos/photo-1584916201218-f4242ceb4809.jpg" alt="庄园全景" loading="lazy">
+        <div class="gallery-caption"><h5>庄园全景</h5><span>集安 · 吉林</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="img/photos/photo-1506377247377-2a5b3b417ebb.jpg" alt="葡萄采摘" loading="lazy">
+        <div class="gallery-caption"><h5>手工采摘</h5><span>每年冬季</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="img/photos/photo-1569529465841-dfecdab7503b.jpg" alt="橡木桶陈酿" loading="lazy">
+        <div class="gallery-caption"><h5>橡木桶陈酿</h5><span>法国橡木桶</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3">
+        <img src="img/photos/photo-1569529465841-dfecdab7503b.jpg" alt="葡萄园晨曦" loading="lazy">
+        <div class="gallery-caption"><h5>葡萄园晨曦</h5><span>长白山麓</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label reveal">News & Events</span>
+      <h2 class="heading-xl reveal">新闻动态</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-image">
+          <img src="img/photos/photo-1510812431401-41d2bd2722f3.jpg" alt="国际大赛获奖" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">奖项 · 2025</div>
+          <h4 class="card-title">美桦君昱冰酒荣获国际大赛金奖</h4>
+          <p class="card-desc">威代尔冰酒在 2025 年国际冰酒大赛中荣获金奖，再次证明集安冰酒的卓越品质。</p>
+          <a href="news/index.html" style="display:inline-block;margin-top:1rem;color:var(--cinnabar);font-size:0.85rem;font-weight:500;">阅读全文 →</a>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <div class="card-image">
+          <img src="img/photos/photo-1534353473418-4cfa6c56fd38.jpg" alt="品鉴活动" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">活动 · 2025</div>
+          <h4 class="card-title">年度集安冰酒节品鉴活动开放预约</h4>
+          <p class="card-desc">一年一度的冰酒节即将开幕，美桦君昱庄园将举办专场品鉴会，诚邀各界爱酒人士共襄盛举。</p>
+          <a href="news/index.html" style="display:inline-block;margin-top:1rem;color:var(--cinnabar);font-size:0.85rem;font-weight:500;">阅读全文 →</a>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="card-image">
+          <img src="img/photos/photo-1506377247377-2a5b3b417ebb.jpg" alt="有机认证" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">认证 · 2024</div>
+          <h4 class="card-title">美桦君昱获得国家有机产品认证</h4>
+          <p class="card-desc">经过三年严格审核，千亩基地正式通过国家有机认证，开启绿色酿造新纪元。</p>
+          <a href="news/index.html" style="display:inline-block;margin-top:1rem;color:var(--cinnabar);font-size:0.85rem;font-weight:500;">阅读全文 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-section" id="visit" style="background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('img/photos/photo-1510812431401-41d2bd2722f3.jpg') center/cover no-repeat;">
+  <div class="cta-content">
+    <div class="seal reveal" style="margin:0 auto var(--space-6);border-color:var(--gold);color:var(--gold);">昱</div>
+    <span class="section-label reveal" style="color:var(--gold-light);display:block;margin-top:var(--space-4);">Visit Us</span>
+    <h2 class="heading-xl reveal">预约探访美桦君昱</h2>
+    <p class="reveal reveal-delay-1">
+      我们为每一位访客量身订制专属品鉴体验。<br>
+      无论是私人导览、精品晚宴还是企业活动，美桦君昱庄园都将为您创造一生难忘的回忆。
+    </p>
+    <div class="cta-buttons reveal reveal-delay-2">
+      <a href="tourism/index.html" class="btn btn-primary btn-lg">预约品鉴体验</a>
+      <a href="contact/index.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.2);color:var(--paper);">联系我们</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo-web.png" alt="美桦君昱" class="footer-logo">
+          <span class="footer-brand-name">美桦君昱</span>
+        </div>
+        <p class="footer-desc">
+          美桦君昱位于吉林省集安市 — 中国冰葡萄酒的核心产区。我们致力于酿造代表东方品质的顶级冰酒与葡萄酒。
+        </p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about/index.html">品牌故事</a></li>
+          <li><a href="products/index.html">产品系列</a></li>
+          <li><a href="tourism/index.html">庄园之旅</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>产品</h6>
+        <ul>
+          <li><a href="products/index.html">冰葡萄酒</a></li>
+          <li><a href="products/index.html">起泡酒</a></li>
+          <li><a href="products/index.html">干红葡萄酒</a></li>
+          <li><a href="products/index.html">白兰地 XO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>联系</h6>
+        <ul>
+          <li><a href="contact/index.html">联系我们</a></li>
+          <li><a href="news/index.html">新闻动态</a></li>
+          <li><a href="#">吉林省集安市</a></li>
+          <li><a href="#">美桦君昱酒庄有限公司</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 美桦君昱酒庄有限公司. All rights reserved.</span>
+      <span>集安 · 吉林 · 中国</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="返回顶部">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
